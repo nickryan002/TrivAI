@@ -1,0 +1,657 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		484848952B3CB09C001FA4BB /* TrivAIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484848942B3CB09C001FA4BB /* TrivAIApp.swift */; };
+		484848972B3CB09C001FA4BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484848962B3CB09C001FA4BB /* ContentView.swift */; };
+		484848992B3CB09D001FA4BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 484848982B3CB09D001FA4BB /* Assets.xcassets */; };
+		4848489C2B3CB09D001FA4BB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4848489B2B3CB09D001FA4BB /* Preview Assets.xcassets */; };
+		484848A62B3CB09D001FA4BB /* TrivAITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484848A52B3CB09D001FA4BB /* TrivAITests.swift */; };
+		484848B02B3CB09D001FA4BB /* TrivAIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484848AF2B3CB09D001FA4BB /* TrivAIUITests.swift */; };
+		484848B22B3CB09D001FA4BB /* TrivAIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484848B12B3CB09D001FA4BB /* TrivAIUITestsLaunchTests.swift */; };
+		484848C32B3F739B001FA4BB /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484848C22B3F739B001FA4BB /* HomePageView.swift */; };
+		484848C52B3F76C7001FA4BB /* StartGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484848C42B3F76C7001FA4BB /* StartGameView.swift */; };
+		484848C72B3F7BD4001FA4BB /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484848C62B3F7BD4001FA4BB /* SettingsView.swift */; };
+		484848C92B3F89BA001FA4BB /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484848C82B3F89BA001FA4BB /* GameView.swift */; };
+		484848CB2B472599001FA4BB /* ScoreCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484848CA2B472599001FA4BB /* ScoreCardView.swift */; };
+		484848CF2B4F3796001FA4BB /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484848CE2B4F3796001FA4BB /* PlayerView.swift */; };
+		484848D12B4F438C001FA4BB /* QuestionWithAnswersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484848D02B4F438C001FA4BB /* QuestionWithAnswersView.swift */; };
+		484848D32B4F4AA7001FA4BB /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 484848D22B4F4AA7001FA4BB /* Launch Screen.storyboard */; };
+		484848D92B51C39D001FA4BB /* Aquire.otf in Resources */ = {isa = PBXBuildFile; fileRef = 484848D82B51C39D001FA4BB /* Aquire.otf */; };
+		484848DA2B51C39D001FA4BB /* Aquire.otf in Resources */ = {isa = PBXBuildFile; fileRef = 484848D82B51C39D001FA4BB /* Aquire.otf */; };
+		484848DB2B51C39D001FA4BB /* Aquire.otf in Resources */ = {isa = PBXBuildFile; fileRef = 484848D82B51C39D001FA4BB /* Aquire.otf */; };
+		489C37F12B60727B002FB966 /* AddPlayersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C37F02B60727B002FB966 /* AddPlayersView.swift */; };
+		489C37F42B613AAB002FB966 /* NewPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C37F32B613AAB002FB966 /* NewPlayerView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		484848A22B3CB09D001FA4BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 484848892B3CB09C001FA4BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 484848902B3CB09C001FA4BB;
+			remoteInfo = TrivAI;
+		};
+		484848AC2B3CB09D001FA4BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 484848892B3CB09C001FA4BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 484848902B3CB09C001FA4BB;
+			remoteInfo = TrivAI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		484848912B3CB09C001FA4BB /* TrivAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrivAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		484848942B3CB09C001FA4BB /* TrivAIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrivAIApp.swift; sourceTree = "<group>"; };
+		484848962B3CB09C001FA4BB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		484848982B3CB09D001FA4BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4848489B2B3CB09D001FA4BB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		484848A12B3CB09D001FA4BB /* TrivAITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrivAITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		484848A52B3CB09D001FA4BB /* TrivAITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrivAITests.swift; sourceTree = "<group>"; };
+		484848AB2B3CB09D001FA4BB /* TrivAIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrivAIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		484848AF2B3CB09D001FA4BB /* TrivAIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrivAIUITests.swift; sourceTree = "<group>"; };
+		484848B12B3CB09D001FA4BB /* TrivAIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrivAIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		484848C22B3F739B001FA4BB /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
+		484848C42B3F76C7001FA4BB /* StartGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartGameView.swift; sourceTree = "<group>"; };
+		484848C62B3F7BD4001FA4BB /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		484848C82B3F89BA001FA4BB /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		484848CA2B472599001FA4BB /* ScoreCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreCardView.swift; sourceTree = "<group>"; };
+		484848CE2B4F3796001FA4BB /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		484848D02B4F438C001FA4BB /* QuestionWithAnswersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionWithAnswersView.swift; sourceTree = "<group>"; };
+		484848D22B4F4AA7001FA4BB /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		484848D62B51C1D0001FA4BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		484848D82B51C39D001FA4BB /* Aquire.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Aquire.otf; sourceTree = "<group>"; };
+		489C37F02B60727B002FB966 /* AddPlayersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlayersView.swift; sourceTree = "<group>"; };
+		489C37F32B613AAB002FB966 /* NewPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlayerView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4848488E2B3CB09C001FA4BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4848489E2B3CB09D001FA4BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		484848A82B3CB09D001FA4BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		484848882B3CB09C001FA4BB = {
+			isa = PBXGroup;
+			children = (
+				484848D22B4F4AA7001FA4BB /* Launch Screen.storyboard */,
+				484848932B3CB09C001FA4BB /* TrivAI */,
+				484848A42B3CB09D001FA4BB /* TrivAITests */,
+				484848AE2B3CB09D001FA4BB /* TrivAIUITests */,
+				484848922B3CB09C001FA4BB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		484848922B3CB09C001FA4BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				484848912B3CB09C001FA4BB /* TrivAI.app */,
+				484848A12B3CB09D001FA4BB /* TrivAITests.xctest */,
+				484848AB2B3CB09D001FA4BB /* TrivAIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		484848932B3CB09C001FA4BB /* TrivAI */ = {
+			isa = PBXGroup;
+			children = (
+				484848D72B51C350001FA4BB /* fonts */,
+				484848D62B51C1D0001FA4BB /* Info.plist */,
+				484848942B3CB09C001FA4BB /* TrivAIApp.swift */,
+				484848962B3CB09C001FA4BB /* ContentView.swift */,
+				484848982B3CB09D001FA4BB /* Assets.xcassets */,
+				4848489A2B3CB09D001FA4BB /* Preview Content */,
+				484848C22B3F739B001FA4BB /* HomePageView.swift */,
+				484848C42B3F76C7001FA4BB /* StartGameView.swift */,
+				484848C62B3F7BD4001FA4BB /* SettingsView.swift */,
+				484848C82B3F89BA001FA4BB /* GameView.swift */,
+				484848D02B4F438C001FA4BB /* QuestionWithAnswersView.swift */,
+				489C37F22B613A7B002FB966 /* PlayerCardViews */,
+			);
+			path = TrivAI;
+			sourceTree = "<group>";
+		};
+		4848489A2B3CB09D001FA4BB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4848489B2B3CB09D001FA4BB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		484848A42B3CB09D001FA4BB /* TrivAITests */ = {
+			isa = PBXGroup;
+			children = (
+				484848A52B3CB09D001FA4BB /* TrivAITests.swift */,
+			);
+			path = TrivAITests;
+			sourceTree = "<group>";
+		};
+		484848AE2B3CB09D001FA4BB /* TrivAIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				484848AF2B3CB09D001FA4BB /* TrivAIUITests.swift */,
+				484848B12B3CB09D001FA4BB /* TrivAIUITestsLaunchTests.swift */,
+			);
+			path = TrivAIUITests;
+			sourceTree = "<group>";
+		};
+		484848D72B51C350001FA4BB /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				484848D82B51C39D001FA4BB /* Aquire.otf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		489C37F22B613A7B002FB966 /* PlayerCardViews */ = {
+			isa = PBXGroup;
+			children = (
+				484848CA2B472599001FA4BB /* ScoreCardView.swift */,
+				484848CE2B4F3796001FA4BB /* PlayerView.swift */,
+				489C37F02B60727B002FB966 /* AddPlayersView.swift */,
+				489C37F32B613AAB002FB966 /* NewPlayerView.swift */,
+			);
+			path = PlayerCardViews;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		484848902B3CB09C001FA4BB /* TrivAI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 484848B52B3CB09D001FA4BB /* Build configuration list for PBXNativeTarget "TrivAI" */;
+			buildPhases = (
+				4848488D2B3CB09C001FA4BB /* Sources */,
+				4848488E2B3CB09C001FA4BB /* Frameworks */,
+				4848488F2B3CB09C001FA4BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TrivAI;
+			productName = TrivAI;
+			productReference = 484848912B3CB09C001FA4BB /* TrivAI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		484848A02B3CB09D001FA4BB /* TrivAITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 484848B82B3CB09D001FA4BB /* Build configuration list for PBXNativeTarget "TrivAITests" */;
+			buildPhases = (
+				4848489D2B3CB09D001FA4BB /* Sources */,
+				4848489E2B3CB09D001FA4BB /* Frameworks */,
+				4848489F2B3CB09D001FA4BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				484848A32B3CB09D001FA4BB /* PBXTargetDependency */,
+			);
+			name = TrivAITests;
+			productName = TrivAITests;
+			productReference = 484848A12B3CB09D001FA4BB /* TrivAITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		484848AA2B3CB09D001FA4BB /* TrivAIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 484848BB2B3CB09D001FA4BB /* Build configuration list for PBXNativeTarget "TrivAIUITests" */;
+			buildPhases = (
+				484848A72B3CB09D001FA4BB /* Sources */,
+				484848A82B3CB09D001FA4BB /* Frameworks */,
+				484848A92B3CB09D001FA4BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				484848AD2B3CB09D001FA4BB /* PBXTargetDependency */,
+			);
+			name = TrivAIUITests;
+			productName = TrivAIUITests;
+			productReference = 484848AB2B3CB09D001FA4BB /* TrivAIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		484848892B3CB09C001FA4BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					484848902B3CB09C001FA4BB = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					484848A02B3CB09D001FA4BB = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = 484848902B3CB09C001FA4BB;
+					};
+					484848AA2B3CB09D001FA4BB = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = 484848902B3CB09C001FA4BB;
+					};
+				};
+			};
+			buildConfigurationList = 4848488C2B3CB09C001FA4BB /* Build configuration list for PBXProject "TrivAI" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 484848882B3CB09C001FA4BB;
+			productRefGroup = 484848922B3CB09C001FA4BB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				484848902B3CB09C001FA4BB /* TrivAI */,
+				484848A02B3CB09D001FA4BB /* TrivAITests */,
+				484848AA2B3CB09D001FA4BB /* TrivAIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4848488F2B3CB09C001FA4BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				484848D92B51C39D001FA4BB /* Aquire.otf in Resources */,
+				484848D32B4F4AA7001FA4BB /* Launch Screen.storyboard in Resources */,
+				4848489C2B3CB09D001FA4BB /* Preview Assets.xcassets in Resources */,
+				484848992B3CB09D001FA4BB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4848489F2B3CB09D001FA4BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				484848DA2B51C39D001FA4BB /* Aquire.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		484848A92B3CB09D001FA4BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				484848DB2B51C39D001FA4BB /* Aquire.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4848488D2B3CB09C001FA4BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				484848C72B3F7BD4001FA4BB /* SettingsView.swift in Sources */,
+				484848D12B4F438C001FA4BB /* QuestionWithAnswersView.swift in Sources */,
+				489C37F42B613AAB002FB966 /* NewPlayerView.swift in Sources */,
+				484848CB2B472599001FA4BB /* ScoreCardView.swift in Sources */,
+				484848972B3CB09C001FA4BB /* ContentView.swift in Sources */,
+				489C37F12B60727B002FB966 /* AddPlayersView.swift in Sources */,
+				484848C32B3F739B001FA4BB /* HomePageView.swift in Sources */,
+				484848CF2B4F3796001FA4BB /* PlayerView.swift in Sources */,
+				484848C52B3F76C7001FA4BB /* StartGameView.swift in Sources */,
+				484848C92B3F89BA001FA4BB /* GameView.swift in Sources */,
+				484848952B3CB09C001FA4BB /* TrivAIApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4848489D2B3CB09D001FA4BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				484848A62B3CB09D001FA4BB /* TrivAITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		484848A72B3CB09D001FA4BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				484848B02B3CB09D001FA4BB /* TrivAIUITests.swift in Sources */,
+				484848B22B3CB09D001FA4BB /* TrivAIUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		484848A32B3CB09D001FA4BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 484848902B3CB09C001FA4BB /* TrivAI */;
+			targetProxy = 484848A22B3CB09D001FA4BB /* PBXContainerItemProxy */;
+		};
+		484848AD2B3CB09D001FA4BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 484848902B3CB09C001FA4BB /* TrivAI */;
+			targetProxy = 484848AC2B3CB09D001FA4BB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		484848B32B3CB09D001FA4BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		484848B42B3CB09D001FA4BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		484848B62B3CB09D001FA4BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TrivAI/Preview Content\"";
+				DEVELOPMENT_TEAM = S8VQ3P3N32;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TrivAI/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.RyanConsulting.TrivAI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		484848B72B3CB09D001FA4BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TrivAI/Preview Content\"";
+				DEVELOPMENT_TEAM = S8VQ3P3N32;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TrivAI/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.RyanConsulting.TrivAI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		484848B92B3CB09D001FA4BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.RyanConsulting.TrivAITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrivAI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TrivAI";
+			};
+			name = Debug;
+		};
+		484848BA2B3CB09D001FA4BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.RyanConsulting.TrivAITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrivAI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TrivAI";
+			};
+			name = Release;
+		};
+		484848BC2B3CB09D001FA4BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.RyanConsulting.TrivAIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TrivAI;
+			};
+			name = Debug;
+		};
+		484848BD2B3CB09D001FA4BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.RyanConsulting.TrivAIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TrivAI;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4848488C2B3CB09C001FA4BB /* Build configuration list for PBXProject "TrivAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				484848B32B3CB09D001FA4BB /* Debug */,
+				484848B42B3CB09D001FA4BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		484848B52B3CB09D001FA4BB /* Build configuration list for PBXNativeTarget "TrivAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				484848B62B3CB09D001FA4BB /* Debug */,
+				484848B72B3CB09D001FA4BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		484848B82B3CB09D001FA4BB /* Build configuration list for PBXNativeTarget "TrivAITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				484848B92B3CB09D001FA4BB /* Debug */,
+				484848BA2B3CB09D001FA4BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		484848BB2B3CB09D001FA4BB /* Build configuration list for PBXNativeTarget "TrivAIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				484848BC2B3CB09D001FA4BB /* Debug */,
+				484848BD2B3CB09D001FA4BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 484848892B3CB09C001FA4BB /* Project object */;
+}
