@@ -18,6 +18,8 @@ struct QuestionWithAnswersView: View {
     @State private var revealAnswer: Bool = false
     @State private var answerOpacity: Double = 0.0
     
+    var initalQuestionsLoaded = false
+    
     let initialNumberOfQuestions: Int = 2
     let numberOfQuestionsIncrement: Int = 8
 
@@ -25,6 +27,7 @@ struct QuestionWithAnswersView: View {
         ScrollView {
             VStack {
                 if !triviaItems.isEmpty && currentQuestionIndex < triviaItems.count {
+                    
                     Text("\(triviaItems[currentQuestionIndex].question)")
                         .multilineTextAlignment(.center).padding()
                         .lineLimit(nil)
@@ -58,7 +61,7 @@ struct QuestionWithAnswersView: View {
                         
 //                        if currentQuestionIndex == 2 && triviaItems.count < numQuestions {
 //                            // Load remaining questions
-//                            loadRemainingTrivia()
+//                            getNextQuestions()
 //                        }
                         
                     }.foregroundColor(.appButtonGray)
@@ -71,8 +74,8 @@ struct QuestionWithAnswersView: View {
             }
             .onAppear {
                 startTriviaSession()
-                getNextQuestions()
             }
+                
         }
     }
 
