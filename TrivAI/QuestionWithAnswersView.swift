@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct QuestionWithAnswersView: View {
-    @Binding var numQuestions: Int
+    @Binding var totalNumQuestions: Int
     @Binding var difficulty: String
     @Binding var topic: String
     
@@ -21,7 +21,7 @@ struct QuestionWithAnswersView: View {
     var initalQuestionsLoaded = false
     
     let initialNumberOfQuestions: Int = 2
-    let numberOfQuestionsIncrement: Int = 8
+    let numberOfQuestionsIncrement: Int = 2
 
     var body: some View {
         ScrollView {
@@ -66,7 +66,7 @@ struct QuestionWithAnswersView: View {
                         
                     }.foregroundColor(.appButtonGray)
                         .padding()
-                } else if currentQuestionIndex >= numQuestions {
+                } else if currentQuestionIndex >= totalNumQuestions {
                     Text("Congrats!")
                 } else {
                     Text("Loading Questions...")
@@ -82,7 +82,7 @@ struct QuestionWithAnswersView: View {
     func startTriviaSession() {
         // Make a request to the start trivia function of the Flask API
         let startQueryItems = [
-            URLQueryItem(name: "numQuestions", value: "\(numQuestions)"),
+            URLQueryItem(name: "numQuestions", value: "\(totalNumQuestions)"),
             URLQueryItem(name: "difficulty", value: difficulty),
             URLQueryItem(name: "topic", value: topic)
         ]
@@ -101,7 +101,8 @@ struct QuestionWithAnswersView: View {
             if let data = data, let responseString = String(data: data, encoding: .utf8) {
                 print("Start Trivia Response: \(responseString)")
                 // After initializing, fetch the initial trivia questions
-                getInitialTrivia()
+                //getInitialTrivia()
+                getTrivia(numberOfQuestions: numberOfQuestionsIncrement)
             } else if let error = error {
                 print("HTTP Request Failed \(error)")
             }
@@ -131,29 +132,45 @@ struct QuestionWithAnswersView: View {
 
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
+        var step = 1
 
-        URLSession.shared.dataTask(with: request) { data, response, error in
-            if let data = data {
-                let responseString = String(data: data, encoding: .utf8) ?? "Invalid response"
-                
-                if let jsonData = responseString.data(using: .utf8) {
-                    do {
-                        print(String(data: jsonData, encoding: .utf8) ?? "Invalid JSON data")
-                        
-                        let decodedResponse = try JSONDecoder().decode(TriviaResponse.self, from: jsonData)
-                        DispatchQueue.main.async {
-                            self.triviaItems.append(contentsOf: decodedResponse.questions)
+        for currentCall in 1...totalNumQuestions/2 {
+            var questionsLoaded = false
+            
+            print("starting URLSession with \(currentCall)")
+            
+                    
+            URLSession.shared.dataTask(with: request) { data, response, error in
+                if let data = data {
+                    let responseString = String(data: data, encoding: .utf8) ?? "Invalid response"
+                    
+                    if let jsonData = responseString.data(using: .utf8) {
+                        do {
+                            print(String(data: jsonData, encoding: .utf8) ?? "Invalid JSON data")
+
+                            let decodedResponse = try JSONDecoder().decode(TriviaResponse.self, from: jsonData)
+                            DispatchQueue.main.async {
+                                self.triviaItems.append(contentsOf: decodedResponse.questions)
+                                questionsLoaded = true
+                            }
+                        } catch {
+                            print("Failed to decode JSON: \(error)")
                         }
-                    } catch {
-                        print("Failed to decode JSON: \(error)")
+                    } else {
+                        print("Failed to convert String to Data")
                     }
-                } else {
-                    print("Failed to convert String to Data")
+                } else if let error = error {
+                    print("HTTP Request Failed \(error)")
                 }
-            } else if let error = error {
-                print("HTTP Request Failed \(error)")
-            }
-        }.resume()
+            }.resume()
+            
+            print("questions loaded = \(questionsLoaded)")
+                
+        }
+    }
+    
+    func areQuestionsLoaded() {
+        
     }
 }
 
@@ -176,5 +193,5 @@ struct TriviaResponse: Codable {
 
 
 #Preview {
-    QuestionWithAnswersView(numQuestions: .constant(3), difficulty: .constant("Hard"), topic: .constant("Cars"))
+    QuestionWithAnswersView(totalNumQuestions: .constant(3), difficulty: .constant("Hard"), topic: .constant("Cars"))
 }

@@ -25,7 +25,7 @@ struct GameView: View {
                 
                 Spacer()
                 
-                QuestionWithAnswersView(numQuestions: $numQuestions, difficulty: $difficulty, topic: $topic)
+                QuestionWithAnswersView(totalNumQuestions: $numQuestions, difficulty: $difficulty, topic: $topic)
                 
                 Spacer()
                 
